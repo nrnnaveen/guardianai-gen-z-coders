@@ -19,8 +19,7 @@ if os.path.exists(banner_path):
     from PIL import Image
     banner_img = Image.open(banner_path)
     st.image(banner_img, use_container_width=True)
-else:
-    st.warning("Banner image not found. Please check the path!")
+
 
 # ---------------- Styled Title & Subheader ----------------
 st.markdown("""
